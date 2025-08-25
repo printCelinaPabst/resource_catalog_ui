@@ -1,6 +1,16 @@
 import './App.css'
+import ResourceCard from './components/components/ResourceCard.jsx'
 
 function App() {
+  const dummyResource = {
+    id: 1,
+    title: "React Basics",
+    description: "Learn the fundamentals of React, components, and props.",
+    topics: ["React", "JavaScript", "Frontend"],
+    skills: ["JSX", "Props", "State"]
+  };
+
+
 
 
   return (
@@ -17,11 +27,15 @@ function App() {
         </div>
       </header>
       <main className="container mx-auto p-4 mt-4">
-        <p className="text-gray-700 text-lg">Willkommen im Ressourcen Katalog</p>
-
+        <div className="max-w-md">
+          <ResourceCard resource={dummyResource} />
+        </div>
       </main>
     </div>
   )
-}
+
+};
+  
+
 
 export default App
