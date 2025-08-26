@@ -1,5 +1,5 @@
 import './App.css'
-import ResourceCard from './components/ResourceCard.jsx'
+import ResourceList from './components/ResourceList.jsx'
 
 function App() {
 const dummyResource = {
@@ -23,16 +23,12 @@ const dummyResource = {
         </div>
       </header>
       <main className="container mx-auto px-6 max-w-screen-xl py-8 mt-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-800">Test Ressource</h2>
-        <div className="max-w-xl">
-          <ResourceCard resource={dummyResource} />
-        </div>
+        <h2 className="text-3xl font-bold mb-10 text-gray-800">Entdecken Sie unsere Ressourcen</h2>
+        <ResourceList/>
       </main>
     </div>
   )
 
 };
-  
-
 
 export default App
