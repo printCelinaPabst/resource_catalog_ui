@@ -32,6 +32,7 @@ const ResourceList = () => {
 
         fetchResources();
     }, []);
+    
     // diese Nachricht wird angezeigt währen die Daten laden
     if (isLoading) {
         return (
